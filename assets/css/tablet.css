@@ -1,4 +1,4 @@
-@media (max-width: 769px) {
+@media only screen and (max-width: 769px) {
   nav #navbartop #navbartop-container {
     width: 80%;
   }
@@ -64,7 +64,7 @@
   margin-bottom: 5%;
 }
 
-@media (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   nav #navbartop #navbartop-container {
     width: 100%;
   }
@@ -145,13 +145,13 @@
   }
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   #shop-content img {
     width: 70%;
   }
 }
 
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   h1 {
     font-size: 0.9rem;
   }

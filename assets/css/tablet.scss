@@ -1,4 +1,4 @@
-@media (max-width: 769px) {
+@media only screen and (max-width: 769px) {
   //   Upper Navbar
   nav {
     #navbartop {
@@ -74,7 +74,7 @@
   margin-bottom: 5%;
 }
 // 425
-@media (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   //   Upper Navbar
   nav {
     #navbartop {
@@ -167,14 +167,14 @@
   }
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   #shop-content {
     img {
       width: 70%;
     }
   }
 }
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   h1 {
     font-size: 0.9rem;
   }
