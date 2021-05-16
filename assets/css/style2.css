@@ -120,7 +120,7 @@ nav #burgermenu {
   width: 30%;
   height: 30px;
   text-align: left;
-  padding-left: 1%;
+  padding-left: 1.5%;
   visibility: hidden;
 }
 
@@ -537,10 +537,11 @@ section {
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
   nav #navbartop #navbartop-container {
-    width: 100%;
+    width: 85%;
   }
   nav #navbartop #navbartop-container ul li a {
     font-size: 0.5rem;
+    color: var(--lgrey);
   }
   nav #navbarmain {
     background-color: var(--bg);

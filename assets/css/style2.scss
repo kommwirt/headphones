@@ -100,7 +100,7 @@ nav {
     width: 30%;
     height: 30px;
     text-align: left;
-    padding-left: 1%;
+    padding-left: 1.5%;
     visibility: hidden;
   }
 
@@ -459,11 +459,12 @@ section {
   nav {
     #navbartop {
       #navbartop-container {
-        width: 100%;
+        width: 85%;
         ul {
           li {
             a {
               font-size: 0.5rem;
+              color: var(--lgrey);
             }
           }
         }
