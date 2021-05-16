@@ -554,6 +554,7 @@ section {
     -webkit-transition: 1s ease;
     transition: 1s ease;
     width: 80%;
+    z-index: 99999999999;
   }
   nav #navbarmain .divider {
     padding: 20% 0;

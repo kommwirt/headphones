@@ -478,6 +478,7 @@ section {
       transform: translateX(-120%);
       transition: 1s ease;
       width: 80%;
+      z-index: 99999999999;
       .divider {
         padding: 20% 0;
       }
