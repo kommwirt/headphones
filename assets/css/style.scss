@@ -354,8 +354,7 @@ section {
 }
 
 // Media Queries
-
-@media only screen and (max-width: 769px) {
+@media only screen and (min-width: 426px) and (max-width: 769px) {
   //   Upper Navbar
   nav {
     #navbartop {
@@ -430,199 +429,11 @@ section {
     width: 100%;
     margin-bottom: 5%;
   }
-  @media only screen and (max-width: 769px) {
-    //   Upper Navbar
-    nav {
-      #navbartop {
-        #navbartop-container {
-          width: 80%;
-          ul {
-            li {
-              a {
-                color: var(--white);
-              }
-            }
-          }
-        }
-      }
-    }
-
-    // General
-
-    h1 {
-      font-size: 1.5rem;
-    }
-
-    // Home
-    .halfhalf {
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-      .text {
-        margin-top: 5%;
-      }
-    }
-  }
-  // Lounger, Experience, Shop
-
-  .fullcontainer {
-    width: 100vw;
-    main {
-      div {
-        width: auto;
-        margin-left: 35vw;
-        padding-right: 5%;
-      }
-      p {
-        color: var(--white);
-        background-color: var(--bg);
-        padding: 4%;
-        font-size: 0.8rem;
-        line-height: 1rem;
-      }
-    }
-  }
-
-  #shop-content {
-    margin-left: 0;
-    flex-direction: unset;
-    width: auto;
-  }
-
-  // Newsletter
-
-  #form {
-    background-color: var(--bg);
-    padding: 5%;
-  }
-
-  // Inspiration
-
-  .articlepic {
-    display: none;
-  }
-  .articletext {
-    width: 100%;
-    margin-bottom: 5%;
-  }
-  // 425
-  @media only screen and (max-width: 425px) {
-    //   Upper Navbar
-    nav {
-      #navbartop {
-        #navbartop-container {
-          width: 100%;
-          ul {
-            li {
-              a {
-                font-size: 0.5rem;
-              }
-            }
-          }
-        }
-      }
-      #navbarmain {
-        background-color: var(--bg);
-        padding: 5%;
-        min-height: 60vh;
-        margin-top: 25%;
-        box-shadow: #000 5px 5px 10px 2px;
-        transform: translateX(-120%);
-        .divider {
-          padding: 20% 0;
-        }
-        ul {
-          .licontainer {
-            li {
-              margin-left: 10%;
-            }
-          }
-        }
-      }
-    }
-
-    // General
-
-    h1 {
-      font-size: 1.25rem;
-    }
-    h2 {
-      font-weight: 300;
-      font-size: 1.25rem;
-      letter-spacing: 0.25rem;
-      text-align: center;
-    }
-    p {
-      font-size: 0.8rem;
-    }
-
-    .no-bg {
-      background: none !important;
-    }
-    // Home
-    .halfhalf {
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-      .text {
-        margin-top: 5%;
-        width: 100%;
-      }
-    }
-    // Experience
-    .intro {
-      text-align: center;
-      span {
-        font-size: 0.6rem;
-      }
-      ul {
-        font-size: 0.6rem;
-        width: 100%;
-        justify-content: space-around;
-      }
-    }
-
-    .articletext {
-      span {
-        font-size: 0.8rem;
-        text-align: center;
-      }
-    }
-    //   Shop
-    #shop-content {
-      margin-left: 0;
-      flex-direction: column;
-      width: 100%;
-      img {
-        width: 80%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    #shop-content {
-      img {
-        width: 70%;
-      }
-    }
-  }
-  @media only screen and (max-width: 320px) {
-    h1 {
-      font-size: 0.9rem;
-    }
-    h2 {
-      font-size: 1.25rem;
-    }
-    p {
-      font-size: 0.75rem;
-      letter-spacing: 0.125rem;
-    }
-  }
 }
 
 // 425
-@media only screen and (max-width: 425px) {
-  //   Upper Navbar
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  //Upper Navbar
   nav {
     #navbartop {
       #navbartop-container {
@@ -714,13 +525,14 @@ section {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 321px) and (max-width: 375px) {
   #shop-content {
     img {
       width: 70%;
     }
   }
 }
+
 @media only screen and (max-width: 320px) {
   h1 {
     font-size: 0.9rem;
