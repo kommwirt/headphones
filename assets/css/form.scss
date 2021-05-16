@@ -1,0 +1,101 @@
+form {
+  position: relative;
+  z-index: 99999;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+form:before,
+form:after {
+  content: " ";
+  display: table;
+}
+#formintro,
+#form {
+  margin: 0;
+  width: 100%;
+  min-height: auto;
+  h1 {
+    padding-bottom: 2%;
+  }
+}
+
+form:after {
+  clear: both;
+}
+
+form label {
+  display: block;
+  padding: 40px 5px 5px 2px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  cursor: pointer;
+}
+
+form input {
+  font-size: 1rem;
+  padding: 5px 10px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--lighter);
+}
+
+form input:focus,
+form textarea:focus,
+form label:active + input,
+form label:active + textarea {
+  outline: none;
+  border: 1px solid var(--dgrey);
+}
+
+form select:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: var(--dgrey);
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: var(--dgrey);
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--dgrey);
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: var(--dgrey);
+}
+
+form input.submit {
+  border: none;
+  color: #fff;
+  width: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 0.75rem;
+  border: 1px solid var(--white);
+  width: 100%;
+  margin-top: 40px;
+  letter-spacing: 0.25rem;
+}
+
+form input.submit:hover {
+  background: var(--white);
+
+  color: var(--dgrey);
+  transition: 0.5s ease-in;
+}
+
+#alert {
+  color: var(--lighter);
+}

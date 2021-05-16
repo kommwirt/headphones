@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter - Read the sound</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/form.css" />
+  </head>
+  <body>
+    <div class="fullcontainer" id="newsletter">
+      <header>
+        <nav>
+          <div id="navbartop">
+            <div id="logo"></div>
+            <div id="navbartop-container">
+              <ul>
+                <li><a class="active" href="">Subscribe & Contact</a></li>
+                <span id="sociallinks">
+                  <li><a class="social" href="">Facebook</a></li>
+                  <li><a class="social" href="">Twitter</a></li>
+                  <li><a class="social" href="">YouTube</a></li>
+                </span>
+                <li><a class="lang" href="">DE</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="navbarmain">
+            <ul>
+              <span class="licontainer">
+                <span class="circle"></span>
+                <li><a href="index.html">About</a></li>
+              </span>
+              <span class="divider"></span>
+              <span class="licontainer">
+                <span class="circle"></span>
+                <li><a href="lounger.html">Lounger</a></li>
+              </span>
+              <span class="divider"></span>
+              <span class="licontainer">
+                <span class="circle"></span>
+                <li><a href="experience.html">Experience</a></li>
+              </span>
+              <span class="divider"></span>
+              <span class="licontainer">
+                <span class="circle"></span>
+                <li><a href="inspiration.html">Inspiration</a></li>
+              </span>
+              <span class="divider"></span>
+              <span class="licontainer">
+                <span class="circle"></span>
+                <li><a href="shop.html">Shop</a></li>
+              </span>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div>
+          <div id="formintro">
+            <h1>Get the good sound</h1>
+            <p>
+              Do you want to hear? Then you have to read. Every four weeks you
+              will receive the latest good hearing news. And if you are older:
+              don't worry, we will write big enough and loud enough.
+            </p>
+          </div>
+          <div id="form">
+            <form action="" method="">
+              <label for="first_name">First Name</label>
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                placeholder="e.g. Fips"
+              />
+              <label for="last_name">Last Name</label>
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                placeholder="e.g. von Zitzewitz"
+              />
+              <label for="email"
+                >Email Address<sup>*</sup><span id="alert"></span
+              ></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="e.g. fippsi@zitzewitz.com"
+                value=""
+                onblur="notMail()"
+                onchange="notMail()"
+              />
+
+              <input
+                class="submit"
+                type="button"
+                value="Get the news"
+                onclick="notMail(), regexCheck()"
+              />
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
