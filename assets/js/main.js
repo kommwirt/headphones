@@ -1,3 +1,5 @@
+// Formstuff
+
 const regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 var alert = document.getElementById('alert')
 let mail= document.getElementById('email')
@@ -18,4 +20,10 @@ function regexCheck(){
     else {
         alert.innerHTML = "Please fill in correct mail adress "
     }
+}
+// Mobile Menue (try)
+
+function mobileMenue() {
+    var getOut = document.getElementById('navbarmain')
+    getOut.classList.toggle("shown")
 }
